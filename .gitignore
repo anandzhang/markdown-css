@@ -1,0 +1,8 @@
+# OS generated files
+.DS_Store
+
+# Webstorm files
+.idea/
+
+# VS Code
+.vscode/
