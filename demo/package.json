@@ -1,0 +1,12 @@
+{
+  "name": "markdown-css",
+  "version": "1.0.0",
+  "description": "用作博客 Markdown 文章的 CSS 样式",
+  "main": "index.js",
+  "author": "Anand Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "markdown-it": "^10.0.0"
+  }
+}
