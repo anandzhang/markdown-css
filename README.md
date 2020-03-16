@@ -6,7 +6,7 @@
 
 可以运行 `/example` 文件夹中的示例程序
 
-![效果](https://raw.githubusercontent.com/anandzhang/markdown-css/master/screenshot/demo.png)
+![效果](https://raw.githubusercontent.com/anandzhang/markdown-css/master/screenshot/example.png)
 
 ## 资源
 
@@ -28,3 +28,6 @@
    <div id="markdown"></div>
    ```
 
+## 代码高亮
+
+案例 `/example` 中使用了 `highlight.js` 库完成代码高亮，具体可以参考 [highlight.js 语法高亮](https://anandzhang.com/posts/frontend/8) 
