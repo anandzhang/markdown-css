@@ -1,4 +1,4 @@
-# Demo
+# Example
 
 这是一个使用 nodejs 写的示例程序。使用了 Express 和 Markdown-it。
 

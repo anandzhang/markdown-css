@@ -10,7 +10,7 @@
 
 ## 资源
 
-根目录的 `markdown.css` 为该项目主要资源。
+`/dist` 目录的 `markdown.css` 为该项目主要资源。
 
 ## 使用
 
