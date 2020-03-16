@@ -2,7 +2,17 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const md = require('markdown-it')()
+// 语法高亮
+//   引入 highlight.js 并配置到 markdown-it
+const hljs = require('highlight.js')
+const highlight = (str, lang) => {
+  let code = md.utils.escapeHtml(str)
+  if (lang && hljs.getLanguage(lang)) {
+    code = hljs.highlight(lang, str, true).value
+  }
+  return `<pre class="hljs"><code>${code}</code></pre>`
+}
+const md = require('markdown-it')({ highlight })
 const fs = require('fs')
 const path = require('path')
 
