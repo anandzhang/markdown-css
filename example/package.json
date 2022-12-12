@@ -6,7 +6,7 @@
   "author": "Anand Zhang",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "highlight.js": "^10.4.1",
     "markdown-it": "^10.0.0"
   }
