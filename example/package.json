@@ -6,8 +6,11 @@
   "author": "Anand Zhang",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.21.0",
     "highlight.js": "^10.4.1",
-    "markdown-it": "^10.0.0"
+    "jquery": "^3.7.1",
+    "katex": "^0.16.11",
+    "markdown-it": "^14.1.0",
+    "markdown-it-katex": "^2.0.3"
   }
 }

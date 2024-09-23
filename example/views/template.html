@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>示例</title>
-    <link rel="stylesheet" href="/public/css/reset.css">
-    <link rel="stylesheet" href="/public/css/markdown.css">
-    <link rel="stylesheet" href="/public/css/github.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DSP学习笔记 by LiPtP</title>
+    <link rel="stylesheet" href="/public/css/reset.css" />
+    <link rel="stylesheet" href="/public/css/markdown.css" />
+    <link rel="stylesheet" href="/public/css/github.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"
+    />
   </head>
-  <body>
+  <body style="background-color: antiquewhite">
     <div id="markdown">{{ content }}</div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"
+      defer
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const markdownElement = document.getElementById("markdown");
+        if (markdownElement) {
+          console.log("开始渲染公式");
+          renderMathInElement(markdownElement, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false },
+            ],
+            throwOnError: false,
+          });
+          console.log("渲染完成");
+        } else {
+          console.error("未找到markdown元素");
+        }
+      });
+    </script>
   </body>
 </html>
