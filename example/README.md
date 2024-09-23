@@ -4,6 +4,7 @@
 
 > 示例使用 markdown-it 作为 markdown 文章转 html 的解析工具。还有其他的 markdown 解析工具，比如：marked 等。
 
+> 添加了 Katex 用于显示数学公式，目前采用 html 文件中渲染公式的方法。
 ## 运行环境
 
 - node
