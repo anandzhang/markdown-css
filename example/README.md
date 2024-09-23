@@ -11,5 +11,5 @@
 ## 启动示例程序
 
 1. 安装项目依赖 `npm install katex markdown-it`
-3. 运行项目 `node .`
+2. 运行项目 `node .`（目前显示的是ch1.md，可自行在JS中修改）
    
