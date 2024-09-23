@@ -10,5 +10,6 @@
 
 ## 启动示例程序
 
-1. 安装项目依赖 `npm install`
-2. 运行项目 `node .`
+1. 安装项目依赖 `npm install katex markdown-it`
+3. 运行项目 `node .`
+   
