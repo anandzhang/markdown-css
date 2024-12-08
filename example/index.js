@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-// 语法高亮
-//   引入 highlight.js 并配置到 markdown-it
+const fs = require('fs')
+const path = require('path')
+
+// 可选：语法高亮 highlight.js
 const hljs = require('highlight.js')
 const highlight = (str, lang) => {
   let code = md.utils.escapeHtml(str)
@@ -13,8 +15,12 @@ const highlight = (str, lang) => {
   return `<pre class="hljs"><code>${code}</code></pre>`
 }
 const md = require('markdown-it')({ highlight })
-const fs = require('fs')
-const path = require('path')
+
+// 可选：支持数学公式 Katex
+md.use(require('@vscode/markdown-it-katex').default, {
+  throwOnError: false,
+  output: 'mathml'
+})
 
 // 配置模版引擎
 app.engine('html', require('./template-engine'))

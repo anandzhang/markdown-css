@@ -52,6 +52,11 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
   - Third item
     - Another level
 
+## Math
+
+$X(e^{j\omega}) = \sum_{n=-\infty}^{\infty} x(n) e^{-j\omega n}$
+
+
 ## Images
 
 ![demo](/public/images/demo.png)

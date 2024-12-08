@@ -28,6 +28,8 @@
    <div id="markdown"></div>
    ```
 
-## 代码高亮
+## 扩展
 
 案例 `/example` 中使用了 `highlight.js` 库完成代码高亮，具体可以参考 [highlight.js 语法高亮](https://anandzhang.com/posts/frontend/8) 
+
+数学公式使用 [Katex](https://katex.org/) ，示例中使用 [@vscode/markdown-it-katex](https://github.com/microsoft/vscode-markdown-it-katex) 插件引入。
